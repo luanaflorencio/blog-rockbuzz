@@ -59,12 +59,12 @@
 <!-- Page Content -->
 <div class="container">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col-12 mb-5 mt-5">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="col-12 mb-5">
+          <div class="card h-50">
+            <img src="https://s2.glbimg.com/FDugWbYL26sM61TXgYr6dxX7mg0=/620x350/e.glbimg.com/og/ed/f/original/2019/07/19/20170721margaret_hamilton.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Conheça a história de Margaret Hamilton, a programadora que salvou a missão à Lua</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Três minutos antes da missão Apollo 11 pousar na Lua, há 50 anos, o sistema de voo emitiu um alerta de emergência no qual avisava que o software estava sobrecarregado e não poderia completar todas as tarefas. </p>
             </div>
             <div class="card-footer">
               <small>
@@ -80,15 +80,14 @@
         </div>
         <div class="col-12 mb-5">
           <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://img.olhardigital.com.br/wp-content/uploads/2020/09/20200914102221.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title">Microsoft recupera data center que estava embaixo d’água há dois anos</h5>
+              <p class="card-text">A Microsoft recuperou um data center que estava submerso há dois anos no fundo do oceano na costa de Orkney, na Escócia. O equipamento, desenvolvido para utilizar a baixa temperatura das águas profundas como sistema de refrigeração, foi removido para que sua eficiência energética pudesse ser testada.</p>
             </div>
             <div class="card-footer">
               <small>
                 <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V10h16v11zm0-13H4V5h16v3z"/></svg> 
-
                   Last updated 1 day ago
                 
                 </small>
@@ -99,12 +98,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col mb-5">
           <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://www.hostmidia.com.br/img/blog/upload/xg-como-aprender-a-programar.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h5 class="card-title">5 passos para aprender a programar</h5>
+              <p class="card-text">Está começando agora a sua carreira como programador? Ou então nem começou mas precisa de um “empurrãozinho” para dar o ponto de partida? Então da uma olhada nessas dicas que farão toda a diferença para você trilhar a sua jornada!</p>
             </div>
             <div class="card-footer">
               <small>
@@ -119,6 +118,7 @@
           </div>
         </div>
       </div>
+      
     <div class="row">
         <div class="col-lg-12">
             <div id="app">
