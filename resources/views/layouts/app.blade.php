@@ -17,14 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: #265b7e">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Rockbuzz Teste Full Stack Laravel
+                <a class="navbar-brand" href="{{ url('/') }}" style="color: white">
+                    <img src="https://res.cloudinary.com/programathor/image/upload/c_fit,h_200,w_200/v1633684929/vk4kouzkxw7uitotc6bg.png" width="30" height="24" class="d-inline-block align-text-top">
+                    Blog Rockbuzz 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -50,10 +51,10 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="/posts">Posts</a>
+                                <a class="nav-link" href="/posts" style="color: white">Posts</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" style="color: white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
