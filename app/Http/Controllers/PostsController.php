@@ -19,7 +19,7 @@ class PostsController extends Controller
      */
     public function listar()
     {
-        $posts = \App\Post::all();
+        $posts = \App\Models\Post::all();
 
         return view('posts.index', ['posts' => $posts]);
     }
@@ -47,12 +47,12 @@ class PostsController extends Controller
             'body' => 'required'
         ]);
 
-        \App\Post::create([
+        \App\Models\Post::create([
             'title' => $request->title,
             'body' => $request->body,
         ]);
 
-        $post = \App\Post::where('title', $request->title)->get();
+        $post = \App\Models\Post::where('title', $request->title)->get();
 
         foreach ($request->tags as $tag) {
             \DB::table('tag_post')->insert([
@@ -72,7 +72,7 @@ class PostsController extends Controller
      */
     public function editar($id)
     {
-        $post = \App\Post::find($id);
+        $post = \App\Models\Post::find($id);
 
         return view('posts.edit', ['post' => $post]);
     }
@@ -91,7 +91,7 @@ class PostsController extends Controller
             'body' => 'required'
         ]);
 
-        $post = \App\Post::find($id);
+        $post = \App\Models\Post::find($id);
 
         $post->update([
             'title' => $request->title,
@@ -118,7 +118,7 @@ class PostsController extends Controller
      */
     public function deletar($id)
     {
-        $post = \App\Post::find($id);
+        $post = \App\Models\Post::find($id);
 
         $post->delete();
 

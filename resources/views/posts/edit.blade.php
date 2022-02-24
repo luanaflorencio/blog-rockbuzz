@@ -33,7 +33,7 @@
                             <div class="form-group has-feedback{{ $errors->has('title') ? ' has-error' : '' }}">
                                 <label for="tags" class="text-muted">Tags</label>
                                 <select id="tags" type="text" name="tags[]" multiple class="form-control">
-                                    @foreach(\App\Tag::all() as $tag)
+                                    @foreach(\App\Models\Tag::all() as $tag)
                                         <option value="{{ $tag->id }}"
                                                 @if($post->has_tag($tag->id)) selected @endif>{{ $tag->name }}</option>
                                     @endforeach

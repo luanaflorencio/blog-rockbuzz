@@ -13,17 +13,17 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
 
-        \App\User::create([
+        \App\Models\User::create([
             'name' => 'Admin',
             'email' => 'admin@test.com',
             'password' => bcrypt(123456)
         ]);
 
-        factory(\App\Post::class, 50)->create();
-        factory(\App\Tag::class, 8)->create();
+        factory(\App\Models\Post::class, 50)->create();
+        factory(\App\Models\Tag::class, 8)->create();
 
-        for($p=50; $p > 1; $p--) {
-            \DB::table('tag_post')->insert(['tag_id' => array_random([1,2,3,4,5,6,7,8]), 'post_id' => $p]);
+        for ($p = 50; $p > 1; $p--) {
+            \DB::table('tag_post')->insert(['tag_id' => array_random([1, 2, 3, 4, 5, 6, 7, 8]), 'post_id' => $p]);
         }
     }
 }

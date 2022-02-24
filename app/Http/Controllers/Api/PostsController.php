@@ -9,7 +9,7 @@ class PostsController extends Controller
 {
     public function listar()
     {
-        $posts = \App\Post::all();
+        $posts = \App\Models\Post::all();
 
         $collection = collect();
         foreach ($posts as $post) {
