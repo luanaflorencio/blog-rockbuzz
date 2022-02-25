@@ -5,13 +5,13 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Posts Edit</div>
+                    <div class="card-header">Editar Post</div>
 
                     <div class="card-body">
                         <form action="{{ url('posts/update/' . $post->id) }}" method="post">
                             {{ csrf_field() }}
                             <div class="form-group has-feedback{{ $errors->has('title') ? ' has-error' : '' }}">
-                                <label for="totle" class="text-muted">Title</label>
+                                <label for="totle" class="text-muted">Título</label>
                                 <input id="title" type="text" value="{{ $post->title }}" name="title"
                                        class="form-control">
                                 @if ($errors->has('title'))
@@ -21,7 +21,7 @@
                                 @endif
                             </div>
                             <div class="form-group has-feedback{{ $errors->has('body') ? ' has-error' : '' }}">
-                                <label for="body" class="text-muted">Body</label>
+                                <label for="body" class="text-muted">Conteúdo</label>
                                 <textarea id="body" name="body" rows="10"
                                           class="form-control">{{ $post->body }}</textarea>
                                 @if ($errors->has('body'))
@@ -44,7 +44,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <button type="submit" class="btn btn-primary">update</button>
+                            <button type="submit" class="btn btn-primary">Atualizar</button>
                         </form>
 
                     </div>
