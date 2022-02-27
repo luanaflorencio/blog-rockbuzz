@@ -41,7 +41,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <button type="submit" class="btn btn-primary">Publicar</button>
+                            <button type="submit" class="btn btn-primary" style="background-color: #194765">Publicar</button>
                         </form>
 
                     </div>

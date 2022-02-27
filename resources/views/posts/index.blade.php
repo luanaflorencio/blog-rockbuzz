@@ -26,7 +26,7 @@
                                 <tr>
                                     <td>{{ $post->title }}</td>
                                     <td>{{ $post->body}}</td>
-                                    <td>{{ $post->id }}</td>
+                                    <td>{{  Auth::user()->name }}</td>
                                     <td>{{ "Não publicado"}}</td>
                                     <td>
                                         <a href="{{ url('posts/edit/' . $post->id) }}" style="border-color: #194765" class="btn btn-light">
