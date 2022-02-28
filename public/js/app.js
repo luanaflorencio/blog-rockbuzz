@@ -1826,7 +1826,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    listar: function listar() {
+    index: function index() {
       var _this = this;
 
       axios.get('/api/posts').then(function (response) {
@@ -1847,7 +1847,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
-    this.listar();
+    this.index();
   }
 });
 

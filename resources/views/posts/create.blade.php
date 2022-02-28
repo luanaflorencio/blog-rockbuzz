@@ -41,7 +41,9 @@
                                     </span>
                                 @endif
                             </div>
-                            <button type="submit" class="btn btn-primary" style="background-color: #194765">Publicar</button>
+                            <button type=submit" class="btn btn-primary" style="background-color: #194765">Publicar</button>
+                            <button type="submit" class="btn btn-primary" style="background-color: #194765">Privado</button>
+
                         </form>
 
                     </div>

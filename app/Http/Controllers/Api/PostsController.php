@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 
 class PostsController extends Controller
 {
-    public function listar()
+    public function index()
     {
         $posts = \App\Models\Post::all();
 

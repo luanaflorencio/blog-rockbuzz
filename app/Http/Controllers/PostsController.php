@@ -17,7 +17,7 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function listar()
+    public function index()
     {
         $posts = \App\Models\Post::all();
 
@@ -29,7 +29,7 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function criar()
+    public function create()
     {
         return view('posts.create');
     }
@@ -40,7 +40,7 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function salvar(Request $request)
+    public function store(Request $request)
     {
         $this->validate($request, [
             'title' => 'required',
@@ -54,13 +54,6 @@ class PostsController extends Controller
 
         $post = \App\Models\Post::where('title', $request->title)->get();
 
-        foreach ($request->tags as $tag) {
-            \DB::table('tag_post')->insert([
-                'tag_id' => $tag->id,
-                'post_id' => $post[0]->id
-            ]);
-        }
-
         return redirect('posts');
     }
 
@@ -70,7 +63,7 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function editar($id)
+    public function edit($id)
     {
         $post = \App\Models\Post::find($id);
 
@@ -84,7 +77,7 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function atualizar(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $this->validate($request, [
             'title' => 'required',
@@ -116,7 +109,7 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function deletar($id)
+    public function delete($id)
     {
         $post = \App\Models\Post::find($id);
 
