@@ -3,7 +3,7 @@
         <div class="row">
             <div v-for="post in posts" class="col-md-3 item">
                 <p>{{ post.title }}</p>
-                <a href="#" @click="apenas(post.id)">detalhes</a>
+                <a href="#" @click="apenas(post.id)">Ler mais</a>
             </div>
         </div>
 
@@ -37,10 +37,10 @@ export default {
         apenas(id) {
             axios.get("/api/posts/" + id).then((response) => {
                 this.post = response.data;
-                this.abre_modal();
+                this.open_modal();
             });
         },
-        abre_modal() {
+        open_modal() {
             this.modal = true;
         },
     },

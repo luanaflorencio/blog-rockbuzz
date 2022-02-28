@@ -1839,10 +1839,10 @@ __webpack_require__.r(__webpack_exports__);
       axios.get('/api/posts/' + id).then(function (response) {
         _this2.post = response.data;
 
-        _this2.abre_modal();
+        _this2.open_modal();
       });
     },
-    abre_modal: function abre_modal() {
+    open_modal: function open_modal() {
       this.modal = true;
     }
   },
@@ -37410,7 +37410,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("detalhes")]
+            [_vm._v("Ler mais")]
           )
         ])
       }),
